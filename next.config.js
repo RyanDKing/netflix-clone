@@ -1,24 +1,12 @@
-const { webpack } = require("next/dist/compiled/webpack/webpack");
+const withTM = require("next-transpile-modules")([
+  "@stripe/firestore-stripe-payments",
+]); // pass the modules you would like to see transpiled
 
-// config.webpack
-const criticalCss = execSync(
-  ["npx", "tailwind", ["--input", "src/pages/global.scss"], "--minify"]
-    .flat()
-    .join(" "),
-  { cwd: PROJECT_ROOT }
-);
-
-config.plugins.push(
-  new webpack.DefinePlugin({
-    CRITICAL_CSS: JSON.stringify(criticalCss),
-  })
-);
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = withTM({
   reactStrictMode: true,
   images: {
-    domains: ["image.tmdb.org"],
+    domains: ["rb.gy", "image.tmdb.org"],
   },
-};
+});
 
 module.exports = nextConfig;
