@@ -1,11 +1,11 @@
 import axios from "axios";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Banner from "../Components/Banner";
-import Header from "../Components/Header";
+import Banner from "../components/Banner";
+import Header from "../components/Header";
 import requests from "../utils/requests";
 import { Movie } from "../typings";
-import Row from "../Components/Row";
+import Row from "../components/Row";
 
 interface Props {
   netflixOriginals: Movie[];
