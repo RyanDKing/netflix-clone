@@ -20,7 +20,7 @@ interface Props {
   // products: Product[]
 }
 
-const Home: NextPage<Props> = ({
+const Home = ({
   netflixOriginals,
   actionMovies,
   comedyMovies,
