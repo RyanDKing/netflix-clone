@@ -8,10 +8,11 @@
   "dependencies": {
     "@heroicons/react": "^2.0.16",
     "axios": "^1.3.4",
-    "next": "latest",
+    "eslint-config-next": "^13.2.1",
+    "next": "^13.2.1",
     "package-name": "^0.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
